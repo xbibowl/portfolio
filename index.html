@@ -39,17 +39,33 @@ nav {
 
 /* HERO */
 .hero {
-  max-width: 1100px; margin: 0 auto; padding: 4rem 1.5rem 3rem;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: end;
+  max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem 4rem;
+  text-align: center;
 }
 @media (max-width: 700px) {
-  .hero { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.5rem 1.25rem 2rem; }
+  .hero { padding: 3rem 1.25rem 2.5rem; }
 }
-.eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-dark); margin-bottom: .75rem; }
-.hero-title { font-family: var(--serif); font-size: clamp(36px,5vw,64px); font-weight: 700; line-height: 1.08; letter-spacing: -.02em; }
+.hero-name {
+  font-family: var(--serif); font-size: clamp(22px,2.5vw,32px);
+  font-weight: 700; letter-spacing: .04em;
+  color: var(--black); margin-bottom: 1rem;
+}
+.hero-name span {
+  color: var(--accent-dark);
+}
+.eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-dark); margin-bottom: 1rem; }
+.hero-title {
+  font-family: var(--serif); font-size: clamp(48px,7vw,88px);
+  font-weight: 700; line-height: 1.04; letter-spacing: -.03em;
+  margin-bottom: 1.5rem;
+}
 .hero-title em { font-style: italic; color: var(--accent-dark); }
-.hero-desc { font-size: 15px; line-height: 1.75; color: var(--gray-600); font-weight: 300; margin-bottom: 1.5rem; }
-.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.hero-desc {
+  font-size: 15px; line-height: 1.8; color: var(--gray-600);
+  font-weight: 300; margin-bottom: 2rem;
+  max-width: 520px; margin-left: auto; margin-right: auto;
+}
+.tags { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
 .tag { font-size: 12px; padding: 5px 14px; border-radius: 20px; border: 1px solid var(--gray-200); color: var(--gray-600); background: var(--white); }
 .hr { height: 1px; background: var(--gray-200); max-width: 1100px; margin: 0 auto 3.5rem; }
 
@@ -378,18 +394,15 @@ footer { border-top: 1px solid var(--gray-200); text-align: center; padding: 2re
 </nav>
 
 <section class="hero">
-  <div>
-    <p class="eyebrow">Web Design · UX/UI</p>
-    <h1 class="hero-title">Refontes<br>de sites<br><em>web</em></h1>
-  </div>
-  <div>
-    <p class="hero-desc">Modernisation visuelle, restructuration de l'information et amélioration de l'expérience utilisateur. Deux projets, deux univers, une même exigence de qualité.</p>
-    <div class="tags">
-      <span class="tag">UX/UI Design</span>
-      <span class="tag">Identité visuelle</span>
-      <span class="tag">WordPress</span>
-      <span class="tag">SEO</span>
-    </div>
+  <p class="hero-name">Antoine <span>Vornière</span></p>
+  <p class="eyebrow">Web Design · UX/UI</p>
+  <h1 class="hero-title">Refontes<br>de sites <em>web</em></h1>
+  <p class="hero-desc">Modernisation visuelle, restructuration de l'information et amélioration de l'expérience utilisateur. Deux projets, deux univers, une même exigence de qualité.</p>
+  <div class="tags">
+    <span class="tag">UX/UI Design</span>
+    <span class="tag">Identité visuelle</span>
+    <span class="tag">WordPress</span>
+    <span class="tag">SEO</span>
   </div>
 </section>
 <div class="hr"></div>
